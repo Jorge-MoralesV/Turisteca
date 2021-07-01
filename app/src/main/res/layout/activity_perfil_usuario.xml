@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#054E4C"
+    android:screenOrientation="portrait"
+    tools:context=".PerfilUsuario">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fondo_datos" />
+
+    <Button
+        android:id="@+id/buttonInicio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/home"
+        android:onClick="irInicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSoporte"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/sugerir"
+        android:onClick="irSugerencias"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonInicio"
+        app:layout_constraintEnd_toStartOf="@+id/buttonInicio"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSalir"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/salir"
+        android:onClick="cerrarSesion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toEndOf="@+id/buttonInicio"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageFoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario" />
+
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editar"
+        android:onClick="actInformacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageFoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/IdmostrarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Invitado"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFoto" />
+
+
+    <TextView
+        android:id="@+id/textCorreoE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Correo:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textContraseña"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Contraseña:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonInicio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textNtelefonico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="N.º telefónico:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textCorreoE"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sexo:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textNtelefonico"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Edad:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textSexo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textApellidoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Apellido materno:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textEdad"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textApellidoP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Apellido paterno:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textApellidoM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Nombre/s:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textApellidoP"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IdmostrarNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textApellidoP"
+        app:layout_constraintStart_toEndOf="@+id/textNombres"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IdmostrarApellidoP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/IdmostrarApellidoM"
+        app:layout_constraintStart_toEndOf="@+id/textApellidoP"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IdmostrarApellidoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="104dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/IdmostrarTelefono"
+        app:layout_constraintStart_toEndOf="@+id/textApellidoM"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IdmostrarEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/IdmostrarSexo"
+        app:layout_constraintStart_toEndOf="@+id/textEdad"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IdmostrarSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textNtelefonico"
+        app:layout_constraintStart_toEndOf="@+id/textSexo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IdmostrarTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="61dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/IdmostrarContraseña"
+        app:layout_constraintStart_toEndOf="@+id/textNtelefonico"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IdmostrarCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="19dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textContraseña"
+        app:layout_constraintStart_toEndOf="@+id/textCorreoE"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IdmostrarContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="21dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonInicio"
+        app:layout_constraintStart_toEndOf="@+id/textContraseña"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fondo_botones_usr" />
+
+    <!--<Button
+        android:id="@+id/botonCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/camara"
+        android:onClick="mostrarFoto"
+        app:layout_constraintBottom_toTopOf="@+id/IdmostrarUsuario"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageFoto"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:ignore="MissingConstraints" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

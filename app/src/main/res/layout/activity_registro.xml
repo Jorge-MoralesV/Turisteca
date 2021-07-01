@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CD890"
+    android:screenOrientation="portrait"
+    tools:context=".RegistroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="690dp">
+
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="190dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="Nombre/s"
+                android:inputType="textPersonName"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/editTextApellidoP"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editTextNombre"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="Apellido paterno"
+                android:inputType="textPersonName"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextApellidoM"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editTextApellidoP"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="Apellido materno"
+                android:inputType="textPersonName"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextEdad"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editTextApellidoM"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="Edad"
+                android:inputType="textPersonName"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextSexo"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editTextEdad"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="Sexo"
+                android:inputType="textPersonName"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTelefono"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editTextSexo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="N.º teléfono"
+                android:inputType="phone"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextCorreoE"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editTextTelefono"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="Correo electronico"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextNombreU"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editTextCorreoE"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="Nombre de usuario"
+                android:inputType="textPersonName"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextContraseña"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editTextNombreU"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextConfirmarCont"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editTextContraseña"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_textos"
+                android:ems="10"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="30px"
+                android:textColor="@color/black"
+                android:textColorHint="#7F7F7F"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonAceptar"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/editTextConfirmarCont"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/forma_boton2"
+                android:onClick="irLogin"
+                android:text="Aceptar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/fondo_logo" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/logoreg" />
+
+
+</RelativeLayout>

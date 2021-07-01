@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CD890"
+    android:screenOrientation="portrait"
+    tools:context=".EnviarSugerencia">
+
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosugerencias" />
+
+    <EditText
+        android:id="@+id/editTextNomLugar"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre del lugar"
+        android:paddingLeft="30px"
+        android:background="@drawable/fondo_textos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Descripción"
+        android:paddingLeft="30px"
+        android:background="@drawable/fondo_descripcion"
+        android:inputType="textMultiLine"
+        android:lines="12"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:gravity="top|left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomLugar" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/forma_boton2"
+        android:onClick="irPerfil"
+        android:text="Enviar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescripcion" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
