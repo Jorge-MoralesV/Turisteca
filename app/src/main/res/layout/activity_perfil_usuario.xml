@@ -175,11 +175,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:text="Nombre/s:"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textApellidoP"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -187,11 +189,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="20dp"
         android:text=""
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textApellidoP"
+        app:layout_constraintBottom_toBottomOf="@+id/textNombres"
         app:layout_constraintStart_toEndOf="@+id/textNombres"
+        app:layout_constraintTop_toTopOf="@+id/textNombres"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -199,11 +201,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="20dp"
         android:text=""
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/IdmostrarApellidoM"
+        app:layout_constraintBottom_toBottomOf="@+id/textApellidoP"
         app:layout_constraintStart_toEndOf="@+id/textApellidoP"
+        app:layout_constraintTop_toTopOf="@+id/textApellidoP"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -211,11 +213,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="104dp"
         android:text=""
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/IdmostrarTelefono"
+        app:layout_constraintBottom_toBottomOf="@+id/textApellidoM"
         app:layout_constraintStart_toEndOf="@+id/textApellidoM"
+        app:layout_constraintTop_toTopOf="@+id/textApellidoM"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -223,11 +225,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="20dp"
         android:text=""
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/IdmostrarSexo"
+        app:layout_constraintBottom_toBottomOf="@+id/textEdad"
         app:layout_constraintStart_toEndOf="@+id/textEdad"
+        app:layout_constraintTop_toTopOf="@+id/textEdad"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -235,11 +237,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="20dp"
         android:text=""
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textNtelefonico"
+        app:layout_constraintBottom_toBottomOf="@+id/textSexo"
         app:layout_constraintStart_toEndOf="@+id/textSexo"
+        app:layout_constraintTop_toTopOf="@+id/textSexo"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -247,11 +249,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="61dp"
         android:text=""
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/IdmostrarContraseña"
+        app:layout_constraintBottom_toBottomOf="@+id/textNtelefonico"
         app:layout_constraintStart_toEndOf="@+id/textNtelefonico"
+        app:layout_constraintTop_toTopOf="@+id/textNtelefonico"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -259,11 +261,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="19dp"
         android:text=""
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textContraseña"
+        app:layout_constraintBottom_toBottomOf="@+id/textCorreoE"
         app:layout_constraintStart_toEndOf="@+id/textCorreoE"
+        app:layout_constraintTop_toTopOf="@+id/textCorreoE"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -271,11 +273,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="21dp"
         android:text=""
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonInicio"
+        app:layout_constraintBottom_toBottomOf="@+id/textContraseña"
         app:layout_constraintStart_toEndOf="@+id/textContraseña"
+        app:layout_constraintTop_toTopOf="@+id/textContraseña"
         tools:ignore="MissingConstraints" />
 
     <ImageView

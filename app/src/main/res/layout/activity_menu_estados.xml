@@ -296,7 +296,7 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:background="@drawable/estado27"
-                    android:onClick="irCiudades"/>
+                    />
 
                 <Button
                     android:id="@+id/buttonEstado28"

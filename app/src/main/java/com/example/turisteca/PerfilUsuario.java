@@ -22,6 +22,7 @@ import android.util.Base64;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -57,7 +58,6 @@ public class PerfilUsuario extends AppCompatActivity {
 
         mostrarDatos();
 
-        //getStringToBitmap();
     }
 
 
@@ -83,69 +83,16 @@ public class PerfilUsuario extends AppCompatActivity {
                     c_elec.setText(res2.getString(8));
                     nom_usur.setText(res2.getString(9));
                     contr.setText(res2.getString(10));
-
-                    /*if (res2.getString(11) == null) {
-                        byte[] decodedString = Base64.decode(res2.getBytes(11), Base64.DEFAULT);
-                        Bitmap bitmap = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
-                        foto.setImageBitmap(bitmap);*/
-                   // } else if (res2.getString(11) == null) {
-                        foto.setImageResource(R.drawable.usuario);
-                   // }
-
-                }
-            }
-
-        } catch (Exception e) {
-            Log.e("SQL error", e.getMessage());
-        }
-    }
-
-   /* public String get64BitEncodedImageBySiteID(int siteID){
-        try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection conn = DriverManager.getConnection(url, userName, password);
-
-            Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery( "SELECT SitePicture FROM SiteTable WHERE SiteID ="+siteID );
-
-            rs.next();
-            // The above line has since been moved to the if statement below where you can see it commented out,
-            // which prevents the exception from occuring but still doesn't fix the fact that the row is not being found.
-
-            if(/*rs.next() &&*//* rs.getBytes("SitePicture")!=null){ // EXCEPTION THROWN HERE!
-                byte ba[] = rs.getBytes("SitePicture");
-                return new sun.misc.BASE64Encoder().encodeBuffer(ba);
-            }
-            else {return null;}
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-        return null;
-    }*/
-
-    public void getStringToBitmap() {
-        ClaseConexion obj = new ClaseConexion();
-        con = obj.conexionBD();
-        try {
-            String usr = getIntent().getStringExtra("id");
-            String sqConsult = "select * from usuarios where id_usuario = '" + usr + "'";
-            Statement stat2 = con.createStatement();
-            ResultSet res2 = stat2.executeQuery(sqConsult);
-            if (res2.getString(1).equals(usr)) {
-                if (res2.getString(11) != null) {
-                    byte[] byteCode = Base64.decode(res2.getBytes(11), Base64.DEFAULT);
-                    Bitmap bitmap = BitmapFactory.decodeByteArray(byteCode, 0, byteCode.length);
-                    foto.setImageBitmap(bitmap);
-                } else if (res2.getString(11) != null) {
                     foto.setImageResource(R.drawable.usuario);
                 }
             }
+
         } catch (Exception e) {
             Log.e("SQL error", e.getMessage());
         }
     }
 
-    public void mostrarFoto(View view) {
+   /* public void mostrarFoto(View view) {
         cargarImagen();
     }
 
@@ -172,7 +119,7 @@ public class PerfilUsuario extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }
-    }
+    }*/
 
     public void irInicio(View view) {
         String usr = getIntent().getStringExtra("id");

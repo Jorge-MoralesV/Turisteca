@@ -77,7 +77,6 @@ public class RegistroActivity extends AppCompatActivity {
             reg.setString(7, c_electronico.getText().toString());
             reg.setString(8, n_usuario.getText().toString());
             reg.setString(9, contraseña.getText().toString());
-            //reg.setByte(10, (byte) R.drawable.usuario);
             reg.executeUpdate();
             Toast.makeText(getApplicationContext(), "Registrado exitosamente.", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
@@ -85,23 +84,6 @@ public class RegistroActivity extends AppCompatActivity {
         }
     }
 
-    /*public void validarUsuario() {
-        con = obj.conexionBD();
-        try {
-            String sqConsult = "select nombrede_usuario from usuarios";
-            Statement stat2 = con.createStatement();
-            ResultSet res2 = stat2.executeQuery(sqConsult);
-            while (res2.next()) {
-                if (res2.getString("nombrede_usuario").equals(n_usuario.getText().toString())) {
-                    Toast.makeText(getApplicationContext(), "El nombre de usuario esta en uso.", Toast.LENGTH_SHORT).show();
-                } else if (!res2.getString("nombrede_usuario").equals(n_usuario.getText().toString())) {
-                    agrearUsuario();
-                }
-            }
-        } catch (Exception e) {
-            Log.e("SQL error", e.getMessage());
-        }
-    }*/
 
     public void irLogin(View view) {
         Intent login = new Intent(this, MainActivity.class);
