@@ -85,8 +85,8 @@ public class RecyclerViewAdapterCiudades extends RecyclerView.Adapter<RecyclerVi
 
         public ViewHolder(View itemView) {
             super(itemView);
-            nombre = itemView.findViewById(R.id.id_nombre_ciudad);
-            foto = itemView.findViewById(R.id.id_imagen_ciudad);
+            nombre = itemView.findViewById(R.id.id_nombre_lugar);
+            foto = itemView.findViewById(R.id.id_imagen_lugar);
         }
     }
 

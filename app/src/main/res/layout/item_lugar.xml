@@ -8,7 +8,7 @@
     android:layout_marginEnd="10dp">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/elemento_ciudad"
+        android:id="@+id/elemento_lugar"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:background="@drawable/fondo_textos">
@@ -48,5 +48,4 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>

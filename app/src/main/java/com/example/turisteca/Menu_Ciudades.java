@@ -22,7 +22,6 @@ public class Menu_Ciudades extends AppCompatActivity implements RecyclerViewAdap
     private SearchView searchView;
     private RecyclerView recyclerViewCiudad;
     private RecyclerViewAdapterCiudades adaptadorCiudad;
-
     private Connection con;
 
     @Override
@@ -52,6 +51,8 @@ public class Menu_Ciudades extends AppCompatActivity implements RecyclerViewAdap
                     ciudad.add(new Datos_Ciudades(rs.getString("nombre_ciudad"), R.drawable.tampico));
                 } else if (rs.getString("nombre_ciudad").equals("Matamoros")) {
                     ciudad.add(new Datos_Ciudades(rs.getString("nombre_ciudad"), R.drawable.matamoros));
+                } else if (rs.getString("nombre_ciudad").equals("Tuxpan")) {
+                    ciudad.add(new Datos_Ciudades(rs.getString("nombre_ciudad"), R.drawable.tuxpan));
                 }
             }
         } catch (SQLException e) {
@@ -80,7 +81,7 @@ public class Menu_Ciudades extends AppCompatActivity implements RecyclerViewAdap
         String usr = getIntent().getStringExtra("id");
         Intent menu = new Intent(this, Info_Ciudad.class);
         menu.putExtra("id", usr);
-        menu.putExtra("nom_ciudad",item);
+        menu.putExtra("nom_ciudad", item);
         startActivity(menu);
     }
 

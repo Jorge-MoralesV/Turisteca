@@ -31,19 +31,16 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 
 public class PerfilUsuario extends AppCompatActivity {
 
-
     private TextView nombre, app, apm, edad, sexo, c_elec, num_tel, contr, nom_usur;
     private Connection con;
     private Button botonFoto;
     private ImageView foto;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil_usuario);
         setRequestedOrientation(SCREEN_ORIENTATION_PORTRAIT);
-
         nombre = findViewById(R.id.IdmostrarNombre);
         app = findViewById(R.id.IdmostrarApellidoP);
         apm = findViewById(R.id.IdmostrarApellidoM);
@@ -55,24 +52,18 @@ public class PerfilUsuario extends AppCompatActivity {
         contr = findViewById(R.id.IdmostrarContraseña);
         //botonFoto = findViewById(R.id.botonCamera);
         foto = findViewById(R.id.imageFoto);
-
         mostrarDatos();
-
     }
-
 
     public void mostrarDatos() {
         ClaseConexion obj = new ClaseConexion();
         con = obj.conexionBD();
-
         try {
             String usr = getIntent().getStringExtra("id");
             String sqConsult = "select * from usuarios where id_usuario = '" + usr + "'";
             Statement stat2 = con.createStatement();
             ResultSet res2 = stat2.executeQuery(sqConsult);
-
             while (res2.next()) {
-
                 if (res2.getString(1).equals(usr)) {
                     nombre.setText(res2.getString(2));
                     app.setText(res2.getString(3));
@@ -86,7 +77,6 @@ public class PerfilUsuario extends AppCompatActivity {
                     foto.setImageResource(R.drawable.usuario);
                 }
             }
-
         } catch (Exception e) {
             Log.e("SQL error", e.getMessage());
         }
@@ -95,12 +85,10 @@ public class PerfilUsuario extends AppCompatActivity {
    /* public void mostrarFoto(View view) {
         cargarImagen();
     }
-
     public void cargarImagen() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(Intent.createChooser(intent, "Seleccione la aplicación"), 10);
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

@@ -17,7 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Info_Ciudad"></activity>
+        <activity android:name=".Info_Lugar"></activity>
+        <activity android:name=".Info_Ciudad" />
         <activity android:name=".Menu_Ciudades" />
         <activity android:name=".EnviarSugerencia" />
         <activity android:name=".ActualizarInformacion" />
