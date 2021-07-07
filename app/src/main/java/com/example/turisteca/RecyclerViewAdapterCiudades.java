@@ -14,13 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+public class RecyclerViewAdapterCiudades extends RecyclerView.Adapter<RecyclerViewAdapterCiudades.ViewHolder> {
 
     private List<Datos_Ciudades> listaCiudad;
     private List<Datos_Ciudades> listaOriginal;
     private RecyclerItemClick itemClick;
 
-    public RecyclerViewAdapter(List<Datos_Ciudades> listaCiudad, RecyclerItemClick itemClick) {
+    public RecyclerViewAdapterCiudades(List<Datos_Ciudades> listaCiudad, RecyclerItemClick itemClick) {
         this.listaCiudad = listaCiudad;
         this.listaOriginal = new ArrayList<>();
         this.itemClick = itemClick;

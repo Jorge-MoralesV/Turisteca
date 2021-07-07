@@ -86,21 +86,33 @@
     <TextView
         android:id="@+id/mostrarDescripcion"
         android:layout_width="343dp"
-        android:layout_height="148dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/fondo_descripcion"
-        android:text="Descripcion"
         android:paddingLeft="10dp"
+        android:text="Descripcion"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mostrarImagenCiudad" />
 
     <Button
         android:id="@+id/buttonMaps"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/location"
+        android:background="@drawable/iconomap"
         app:layout_constraintEnd_toEndOf="@+id/mostrarDescripcion"
         app:layout_constraintTop_toBottomOf="@+id/mostrarDescripcion" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="Encuéntralo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMaps"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMaps"
+        app:layout_constraintTop_toTopOf="@+id/buttonMaps" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

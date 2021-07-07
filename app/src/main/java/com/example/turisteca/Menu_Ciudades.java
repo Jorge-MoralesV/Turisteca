@@ -17,11 +17,11 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Menu_Ciudades extends AppCompatActivity implements RecyclerViewAdapter.RecyclerItemClick, SearchView.OnQueryTextListener {
+public class Menu_Ciudades extends AppCompatActivity implements RecyclerViewAdapterCiudades.RecyclerItemClick, SearchView.OnQueryTextListener {
 
     private SearchView searchView;
     private RecyclerView recyclerViewCiudad;
-    private RecyclerViewAdapter adaptadorCiudad;
+    private RecyclerViewAdapterCiudades adaptadorCiudad;
 
     private Connection con;
 
@@ -32,7 +32,7 @@ public class Menu_Ciudades extends AppCompatActivity implements RecyclerViewAdap
         searchView = findViewById(R.id.searchCiudad);
         recyclerViewCiudad = findViewById(R.id.recycler_view_ciudades);
         recyclerViewCiudad.setLayoutManager(new LinearLayoutManager(this));
-        adaptadorCiudad = new RecyclerViewAdapter(obtenerDatosBD(), this);
+        adaptadorCiudad = new RecyclerViewAdapterCiudades(obtenerDatosBD(), this);
         recyclerViewCiudad.setAdapter(adaptadorCiudad);
         initListener();
     }
@@ -80,6 +80,7 @@ public class Menu_Ciudades extends AppCompatActivity implements RecyclerViewAdap
         String usr = getIntent().getStringExtra("id");
         Intent menu = new Intent(this, Info_Ciudad.class);
         menu.putExtra("id", usr);
+        menu.putExtra("nom_ciudad",item);
         startActivity(menu);
     }
 
