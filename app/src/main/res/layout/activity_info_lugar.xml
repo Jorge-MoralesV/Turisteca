@@ -126,4 +126,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/buttonComentar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/sugerir"
+        android:onClick="irComentarios"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintStart_toEndOf="@+id/botonHome"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewLugares" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

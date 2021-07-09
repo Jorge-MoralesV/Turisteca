@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CD890"
+    tools:context=".Comentarios">
+
+
+    <EditText
+        android:id="@+id/editTextComentario"
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fondo_descripcion"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Cuentanos tu experiencia de este lugar"
+        android:inputType="textMultiLine"
+        android:lines="12"
+        android:paddingLeft="30px"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEnviarC"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/forma_boton2"
+        android:onClick="irLugar"
+        android:text="Aceptar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextComentario" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

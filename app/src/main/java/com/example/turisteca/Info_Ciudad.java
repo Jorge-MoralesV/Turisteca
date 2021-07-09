@@ -102,7 +102,6 @@ public class Info_Ciudad extends AppCompatActivity implements RecyclerViewAdapte
             String sqConsult2 = "select  * from lugares where ciudad_perteneciente = '" + ciudad2 + "'";
             Statement st2 = con.createStatement();
             ResultSet rs2 = st2.executeQuery(sqConsult2);
-            Toast.makeText(getApplicationContext(), ciudad2, Toast.LENGTH_SHORT).show();
             while (rs2.next()) {
                 if (rs2.getString("ciudad_perteneciente").equals("")) {
                     Toast.makeText(getApplicationContext(), "No hay datos", Toast.LENGTH_SHORT).show();
@@ -156,5 +155,6 @@ public class Info_Ciudad extends AppCompatActivity implements RecyclerViewAdapte
         menu.putExtra("id", usr);
         startActivity(menu);
     }
+
 
 }

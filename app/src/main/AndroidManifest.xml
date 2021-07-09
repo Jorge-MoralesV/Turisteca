@@ -17,21 +17,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Info_Lugar"></activity>
-        <activity android:name=".Info_Ciudad" />
-        <activity android:name=".Menu_Ciudades" />
-        <activity android:name=".EnviarSugerencia" />
-        <activity android:name=".ActualizarInformacion" />
-        <activity android:name=".PerfilUsuario" />
-        <activity android:name=".MenuEstados" />
-        <activity android:name=".RecuperarContActivity" />
-        <activity android:name=".RegistroActivity" />
+        <activity
+            android:name=".ConfirmarCambioContr"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Comentarios"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Info_Lugar"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Info_Ciudad"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Menu_Ciudades"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".EnviarSugerencia"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ActualizarInformacion"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PerfilUsuario"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MenuEstados"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RecuperarContActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RegistroActivity"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

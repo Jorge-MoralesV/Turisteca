@@ -31,8 +31,7 @@ public class RecyclerViewAdapterLugares extends RecyclerView.Adapter<RecyclerVie
     @Override
     public RecyclerViewAdapterLugares.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lugar, parent, false);
-        //ViewHolder viewHolder = new ViewHolder(view);
-        return new RecyclerViewAdapterLugares.ViewHolder(view);//viewHolder;
+        return new RecyclerViewAdapterLugares.ViewHolder(view);
     }
 
     @Override

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4D1818"
-    tools:context=".RecuperarContActivity">
+    tools:context=".ConfirmarCambioContr">
 
     <ImageView
         android:id="@+id/imageView10"
@@ -18,26 +18,7 @@
         app:srcCompat="@drawable/logorc" />
 
     <EditText
-        android:id="@+id/ingNomUsusario"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/fondo_textos"
-        android:ems="10"
-        android:hint="Nombre de usuario"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:textColor="@color/black"
-        android:textColorHint="#7F7F7F"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingCorreo" />
-
-    <EditText
-        android:id="@+id/ingCorreo"
+        android:id="@+id/ingContra"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="10dp"
@@ -45,8 +26,8 @@
         android:layout_marginEnd="10dp"
         android:background="@drawable/fondo_textos"
         android:ems="10"
-        android:hint="Correo electronico"
-        android:inputType="textEmailAddress"
+        android:hint="Nueva contraseña"
+        android:inputType="textPassword"
         android:paddingLeft="10dp"
         android:textColor="@color/black"
         android:textColorHint="#7F7F7F"
@@ -55,12 +36,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
+    <EditText
+        android:id="@+id/ingRepContra"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/fondo_textos"
+        android:ems="10"
+        android:hint="Confirmar nueva contraseña"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#7F7F7F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingContra" />
+
     <Button
 
         android:id="@+id/botonAceptar"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:background="@drawable/forma_boton2"
+        android:onClick="irLogin"
         android:text="Aceptar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
@@ -68,6 +69,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingNomUsusario" />
+        app:layout_constraintTop_toBottomOf="@+id/ingRepContra" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
